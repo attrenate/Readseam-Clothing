@@ -1,0 +1,36 @@
+.auth-page {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.left-side,
+.login-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Tablet and below */
+@media (max-width: 1024px) {
+  .auth-page {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    height: auto;
+  }
+  .left-side,
+  .login-form {
+    min-width: unset;
+    width: 100%;
+  }
+}
+
+/* Phone */
+@media (max-width: 600px) {
+  .auth-page {
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+}
